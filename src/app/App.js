@@ -3,6 +3,7 @@ import Header from './nav/Header';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 import Footer from './nav/Footer';
 
 function App() {

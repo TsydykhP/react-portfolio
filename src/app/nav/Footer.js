@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { NavLink } from 'react';
+import logo from '../assets/logo.png';
 
 function Footer() {
     return (
-        <div>
-            
-        </div>
+        <footer>
+            <div className="wrap-b">
+                <NavLink to="/" exact><img src={logo} /></NavLink>
+                <NavLink to="/" exact>Tsydykh Pokhodiev</NavLink>
+                <ul>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
+                </ul>
+            </div>
+        </footer>
     )
 }
 

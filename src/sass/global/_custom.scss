@@ -1,0 +1,66 @@
+// Display
+.wrap-c {
+    @include fc;
+}
+.wrap-b {
+    @include fb;
+}
+.text-c {
+    text-align: center;
+}
+
+
+// Buttons
+.btn {
+    padding: 0.5rem 2.5rem;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+        opacity: 0.85;
+        animation-name: btn;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+}
+
+
+// Positions
+.rel {
+    position: relative;
+    top: 0;
+}
+.abs {
+    position: absolute;
+}
+
+
+// Animations
+.rotation {
+    animation-name: rotation;
+    animation-duration: 12s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes btn {
+    from {
+        width: 0;
+
+    }
+    to {
+        width: 100%;
+    }
+}

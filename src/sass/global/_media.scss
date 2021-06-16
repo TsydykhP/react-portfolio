@@ -1,0 +1,32 @@
+@media (max-width: 767px) {
+    body {
+        font-size: 0.875rem;
+    }
+    .nav {
+        display: none;
+    }
+    .menu {
+        @include fb;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+    body {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1601px) and (max-width: 1900px) {
+    body {
+        font-size: 1.125rem;
+    }
+}
+@media (min-width: 1901px) {
+    body {
+        font-size: 1.250rem;
+    }
+}

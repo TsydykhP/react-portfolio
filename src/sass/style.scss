@@ -1,0 +1,11 @@
+@import './global/mixins';
+@import './global/global';
+// @import './global/custom';
+
+@import './nav/header';
+@import './nav/burger';
+
+@import './components/Home';
+
+@import './nav/footer';
+@import './global/media';

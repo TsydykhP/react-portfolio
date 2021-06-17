@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,14 +10,12 @@ img, video, svg {
     max-width: 100%;
 }
 main {
+    width: 100%;
     padding: 3.75rem 0;
     flex-direction: column;
 }
-header, footer {
-    width: 100%;
-}
 
-.app, .wrapper {
+.App {
     display: flex;
     flex-direction: column;
     overflow: hidden;

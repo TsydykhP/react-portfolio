@@ -2,9 +2,15 @@ import React from 'react'
 
 function Resume() {
     return (
-        <div>
-
-        </div>
+        <main>
+            <section>
+                <h1>Resume</h1>
+            </section>
+            <div>
+                <section></section>
+                <section></section>
+            </div>
+        </main>
     )
 }
 

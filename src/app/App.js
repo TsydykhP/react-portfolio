@@ -9,18 +9,18 @@ import Footer from './nav/Footer';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <div className="container">
-          <Switch>
-            <Route component={Portfolio} path="/" exact />
-            <Route component={About} path="/about" />
-            <Route component={Resume} path="/resume" />
-            <Route component={Contact} path="/contact" />
-          </Switch>
-        </div>
-        <Footer />
-      </BrowserRouter>
+      <div className="container">
+        <BrowserRouter>
+            <Header />
+              <Switch>
+                <Route component={Portfolio} path="/" exact />
+                <Route component={About} path="/about" />
+                <Route component={Resume} path="/resume" />
+                <Route component={Contact} path="/contact" />
+              </Switch>
+            <Footer />
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

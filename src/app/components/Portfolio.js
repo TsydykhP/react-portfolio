@@ -2,9 +2,14 @@ import React from 'react'
 
 function Portfolio() {
     return (
-        <div>
-
-        </div>
+        <main>
+            <section>
+                <h1>Projects</h1>
+            </section>
+            <article>
+                
+            </article>
+        </main>
     )
 }
 

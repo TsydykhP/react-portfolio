@@ -13,28 +13,36 @@ function Header() {
                     <div>
                         <div>
                             <ul>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/" exact>Portfolio</NavLink></li>
+                                <li><NavLink to="/" exact>About</NavLink></li>
+                                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                                 <li><NavLink to="/resume">Resume</NavLink></li>
-                                <li><NavLink to="/contact">Contact</NavLink></li>
+                                <div className="social-links">
+                                    <ul>
+                                        <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/"><i className="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA"><i className="fa fa-youtube"></i></a></li>
+                                        <li><a href="https://www.instagram.com/tsydykh_pokhodiev/"><i className="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
                             </ul>
                         </div>
                     </div>
                 </div>
+                <div className="menu-line"></div>
             </div>
 
-            <nav className="wrap-nav">
-                <div>
+            <nav className="wrap-nav nav">
+                <div className="nav-links">
                     <NavLink to="/" exact><img src={logo} alt="logo" /></NavLink>
-                    <NavLink className="link" to="/about">About</NavLink>
-                    <NavLink className="link" to="/" exact>Portfolio</NavLink>
-                    <NavLink className="link" to="/resume">Resume</NavLink>
-                    <NavLink className="link" to="/contact">Contact</NavLink>
+                    <NavLink className="link" activeClassName="active-link" to="/" exact>About Me</NavLink>
+                    <NavLink className="link" activeClassName="active-link" to="/portfolio">Portfolio</NavLink>
+                    <NavLink className="link" activeClassName="active-link" to="/resume">Resume</NavLink>
                 </div>
-                <div>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-github-square"></i>
+                <div className="social-links">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/"><i className="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA"><i className="fa fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/tsydykh_pokhodiev/"><i className="fa fa-instagram"></i></a></li>
+                    </ul>
                 </div>
             </nav>
         </header>

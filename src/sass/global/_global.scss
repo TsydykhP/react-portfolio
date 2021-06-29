@@ -11,6 +11,7 @@ img, video, svg {
 }
 main {
     width: 100%;
+    min-height: 100vh;
     padding: 3.75rem 0;
     flex-direction: column;
 }
@@ -22,7 +23,7 @@ main {
     min-height: 100vh;
 }
 .container {
-    max-width: 1260px;
+    max-width: 1500px;
     padding: 0 15px;
     margin: 0 auto;
 }

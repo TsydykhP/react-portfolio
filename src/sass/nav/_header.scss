@@ -2,3 +2,80 @@
     padding: 1.125rem 0;
     background-color: #fff;
 }
+
+.nav-links {
+    @include fc;
+     a {
+         margin-left: 2.5rem;
+     }
+}
+
+.active-link {
+    position: relative;
+    top: 0;
+
+    @include fc;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 24px;
+        background: rgba(132, 0, 240, 0.65);
+
+        width: 35%;
+        height: 1px;
+    }
+}
+
+.social-links {
+    ul {
+        list-style: none;
+        @include fc;
+    }
+    li {
+        @include fc;
+        list-style: none;
+        margin: 0 15px;
+
+        &:nth-child(1) a:hover {
+            background-color: #0077B5;
+        }
+        &:nth-child(2) a:hover {
+            background-color: #e4405f;
+        }
+        &:nth-child(3) a:hover {
+            background-color: #cd201f;
+        }
+    }
+    .fa {
+        font-size: 16px;
+        padding: 0.5rem;
+        transition: 0.4s;
+        color: #000;
+
+        &:hover {
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            font-size: 18px;
+            padding: 0.55rem;
+        }
+    }
+    a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        transition: 0.4s;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            transform: translate(0, -10px);
+        }
+        @media (max-width: 768px) {
+            width: 38px;
+            height: 38px;
+        }
+    }
+}

@@ -1,16 +1,27 @@
 $burger: rgba(13, 110, 139, 0.75);
 $overlay: rgba(24, 39, 51, 0.85);
 $menu-speed: 0.75s;
+
 $menu-nav: #fff;
+$menu-c: #fff;
+
+$p-menu: 5px 0;
+$m-menu: 0.35rem 0.5rem 0 0;
 
 .menu {
+    width: 100%;
     display: none;
-    margin-left: 1rem;
+    background-color: #fdfdfd;
 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
+    padding: $p-menu;
+
+    .social-links {
+        margin-top: 0.75rem;
+    }
 
     &-nav {
         @include fc;
@@ -59,16 +70,30 @@ $menu-nav: #fff;
             }
         }
     }
+
+    &-line {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 1px;
+
+        background-color: #eeeeee;
+        box-shadow: 0 1px 1px
+        rgba(0,0,0,0.25), 0 3px 2px
+        rgba(0,0,0,0.15);
+    }
 }
 
 .toggler {
+    margin: $m-menu;
     width: 60px;
     height: 60px;
     opacity: 0;
 
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 2;
 
     cursor: pointer;
@@ -103,12 +128,13 @@ $menu-nav: #fff;
     width: 60px;
     height: 60px;
 
+    margin: $m-menu;
     padding: 1rem;
     background: $burger;
 
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
 
     & > div {
@@ -116,7 +142,7 @@ $menu-nav: #fff;
 
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: $menu-c;
 
         position: relative;
         transition: all 0.4s ease;

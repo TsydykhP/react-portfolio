@@ -3,7 +3,6 @@ import Header from './nav/Header';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Resume from './components/Resume';
-import Contact from './components/Contact';
 import Footer from './nav/Footer';
 
 function App() {
@@ -13,10 +12,9 @@ function App() {
         <BrowserRouter>
             <Header />
               <Switch>
-                <Route component={Portfolio} path="/" exact />
-                <Route component={About} path="/about" />
+                <Route component={About} path="/" exact />
+                <Route component={Portfolio} path="/portfolio"/>
                 <Route component={Resume} path="/resume" />
-                <Route component={Contact} path="/contact" />
               </Switch>
             <Footer />
         </BrowserRouter>

@@ -1,0 +1,47 @@
+.about {
+    padding: 5rem 0 2rem 0;
+    @media (max-width: 768px) {
+        padding: 3rem 0 1rem 0;
+    }
+    @media (min-width: 1900px) {
+        padding: 7.5rem 0 2rem 0;
+    }
+}
+.about-line {
+    background: $colored;
+    margin: 1rem 0 1.5rem 0;
+    width: 50px;
+    height: 1px;
+}
+
+.about-bg {
+    @include fc;
+
+    display: block;
+    position: absolute;
+    left: 0;
+
+    background-color: rgba(132, 0, 240, 0.05);
+    box-shadow: $bShadow;
+
+    min-width: 525px;
+    max-width: 700px;
+
+    min-height: 270px;
+    max-height: 400px;
+
+    @media (max-width: 768px) {
+        position: relative;
+
+        min-width: 175px;
+        max-width: 300px;
+
+        min-height: 175px;
+        max-height: 300px;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        min-width: 40vw;
+        max-width: 40vw;
+    }
+}

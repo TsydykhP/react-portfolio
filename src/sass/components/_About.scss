@@ -30,6 +30,16 @@
     min-height: 270px;
     max-height: 400px;
 
+    img {
+        position: absolute;
+        top: -10%;
+        padding: 10% 10%;
+        @media (max-width: 768px) {
+            top: 20%;
+            padding: 10% 5%;
+        }
+    }
+
     @media (max-width: 768px) {
         position: relative;
 
@@ -43,5 +53,13 @@
     @media (min-width: 1200px) and (max-width: 1400px) {
         min-width: 40vw;
         max-width: 40vw;
+    }
+    @media (min-width: 1401px) and (max-width: 1600px) {
+        min-width: 35vw;
+        max-width: 35vw;
+    }
+    @media (min-width: 1601px) and (max-width: 2200px) {
+        min-width: 30vw;
+        max-width: 30vw;
     }
 }

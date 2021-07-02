@@ -360,6 +360,10 @@ h1, h2, h3 {
   padding: 5px 0;
 }
 
+.menu .logo {
+  padding-left: 7px;
+}
+
 .menu .social-links {
   margin-top: 0.75rem;
 }
@@ -544,6 +548,8 @@ h1, h2, h3 {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  border: none;
+  background: transparent;
   width: 600px;
   height: 400px;
   color: #000;
@@ -558,38 +564,6 @@ h1, h2, h3 {
   object-fit: contain;
   position: absolute;
   top: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.project img:hover {
-  opacity: 0.1;
-}
-
-.project-desc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  padding: 0.75rem 1.75rem;
-  position: absolute;
-  top: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.project-desc:hover {
-  z-index: 1;
-}
-
-.project-desc h3 {
-  margin: 0 0 0.4rem 0;
-  color: rgba(44, 0, 240, 0.95);
-}
-
-.project-desc > div {
-  font-weight: 500;
 }
 
 .project-tech {
@@ -606,19 +580,57 @@ h1, h2, h3 {
   }
 }
 
-.project .type > div {
-  padding: 0 0.35rem;
-}
-
-.project .adapt > div {
-  padding: 0 0.55rem;
-}
-
 @media (max-width: 768px) {
   .project {
     width: 100%;
     height: 250px;
     margin-bottom: 1rem;
+  }
+}
+
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  padding: 0 0.5rem;
+}
+
+.desc h3 {
+  font-family: 'Marck Script', cursive;
+  font-size: 24px;
+  padding: 4px 16px;
+  color: rgba(132, 0, 240, 0.85);
+  border: 1px solid rgba(132, 0, 240, 0.35);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .desc h3 {
+    font-size: 18px;
+  }
+}
+
+.desc strong {
+  font-weight: 600;
+}
+
+.type > div {
+  padding: 0 10px;
+}
+
+.adapt > div {
+  padding: 10px 10px 0 10px;
+}
+
+@media (max-width: 768px) {
+  .adapt > div {
+    padding: 0 10px 0 10px;
   }
 }
 
@@ -660,6 +672,19 @@ h1, h2, h3 {
   max-height: 400px;
 }
 
+.about-bg img {
+  position: absolute;
+  top: -10%;
+  padding: 10% 10%;
+}
+
+@media (max-width: 768px) {
+  .about-bg img {
+    top: 20%;
+    padding: 10% 5%;
+  }
+}
+
 @media (max-width: 768px) {
   .about-bg {
     position: relative;
@@ -674,6 +699,20 @@ h1, h2, h3 {
   .about-bg {
     min-width: 40vw;
     max-width: 40vw;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .about-bg {
+    min-width: 35vw;
+    max-width: 35vw;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2200px) {
+  .about-bg {
+    min-width: 30vw;
+    max-width: 30vw;
   }
 }
 
@@ -797,9 +836,17 @@ h1, h2, h3 {
   padding: 0.25rem 1.75rem;
 }
 
+.resume-contacts p {
+  margin-bottom: 0.1rem;
+}
+
 .resume-item {
   font-size: 0.8rem;
   padding: 0.75rem 0;
+}
+
+.resume-item h3 {
+  margin-top: 0.15rem;
 }
 
 .resume-item p {
@@ -820,6 +867,16 @@ h1, h2, h3 {
     flex-direction: column;
     text-align: center;
     font-size: 0.65rem;
+  }
+}
+
+.resume-r {
+  max-width: 97.5%;
+}
+
+@media (max-width: 768px) {
+  .resume-r {
+    font-size: 0.8rem;
   }
 }
 
@@ -976,22 +1033,29 @@ h1, h2, h3 {
 }
 
 .course {
+  max-width: 85%;
   padding: 0.75rem 0;
-}
-
-.course img {
-  width: 48px;
-  height: 48px;
   margin: 0.25rem 0;
 }
 
 .course h3 {
+  text-align: center;
   font-size: 0.9rem;
+  padding: 0.1rem;
+  border: 1px solid #999;
+  border-radius: 5px;
 }
 
-.course p {
+.course-sub {
+  margin: 0.1rem 0;
   padding: 0.15rem 0 0.35rem 0;
   font-size: 0.8rem;
+}
+
+.course-desc {
+  font-size: 0.7rem;
+  max-width: 85%;
+  margin: 0.1rem 0;
 }
 
 @media (max-width: 768px) {
@@ -1000,6 +1064,7 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
   }
 }
 

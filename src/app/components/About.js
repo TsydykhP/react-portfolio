@@ -20,7 +20,7 @@ function About() {
             </section>
 
             <motion.section className="about fl-c fl-d text-c" initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ delay: 1 }}>
-                <h1 className="cursive">About Me</h1>
+                <h1 className="hpage">About Me</h1>
                 <div className="about-line"></div>
                 <p className="mw-70">I am now 19 years old and in my free time, I like to do self-education. I want to travel and discover new things from different angles.
                 Now I am delving into front-end development in order to <span className="color-t">find a job</span> and get the desired experience and <span className="color-t">start working</span> in a team.
@@ -37,11 +37,14 @@ function About() {
                 </div>
                 <div className="pd-1 mw-70-100 text-c-m">
                     <p>
-                    E-mail: <NavLink to="/contact">tsydykhp@gmail.com</NavLink>
+                    E-mail: <a href="mailto:tsydykhp@gmail.com">tsydykhp@gmail.com</a>
                     <br />Linkedin: <a href="https://www.linkedin.com/in/tsydykh-pokhodiev/">https://www.linkedin.com/in/tsydykh-pokhodiev/</a>
                     </p>
                 </div>
             </motion.section>
+            <motion.div className="fl-c fl-d text-c pd-1" initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ delay: 1 }}>
+                <NavLink className="btn" to="/portfolio" exact>Portfolio</NavLink>
+            </motion.div>
         </main>
     )
 }

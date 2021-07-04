@@ -65,6 +65,10 @@ h1, h2, h3 {
   color: rgba(132, 0, 240, 0.85);
 }
 
+.hpage {
+  font-size: 1.35rem;
+}
+
 .cursive {
   font-family: 'Marck Script', cursive;
 }
@@ -753,6 +757,12 @@ h1, h2, h3 {
   font-size: 13px;
 }
 
+@media (max-width: 768px) {
+  .resume .course-link {
+    margin-top: 8px;
+  }
+}
+
 .resume-dec {
   display: flex;
   justify-content: center;
@@ -1064,6 +1074,7 @@ h1, h2, h3 {
     align-items: center;
     flex-direction: column;
     max-width: 100%;
+    text-align: center;
   }
 }
 

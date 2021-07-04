@@ -16,7 +16,7 @@ const Project = () => {
         <motion.section className="grid" layout whileHover={{ opacity: 1}}>
             {projectData && projectData.map((project) => (
 
-            <article className="project-wrap" key={project.id} layout>
+            <motion.article className="project-wrap" key={project.id} layout>
                 <a className="project" href={project.link} target="_blank" rel="noopener noreferrer">
 
                     <motion.img
@@ -44,7 +44,7 @@ const Project = () => {
                     </motion.div>
 
                 </a>
-            </article>
+            </motion.article>
 
             ))}
         </motion.section>

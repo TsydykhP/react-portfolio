@@ -26,6 +26,9 @@
     }
     .course-link {
         font-size: 13px;
+        @media (max-width: 768px) {
+            margin-top: 8px;
+        }
     }
 
     &-dec {
@@ -260,5 +263,6 @@
         @include fc;
         flex-direction: column;
         max-width: 100%;
+        text-align: center;
     }
 }

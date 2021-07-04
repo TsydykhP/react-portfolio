@@ -7,7 +7,7 @@ function Resume() {
                 <h1 className="fz-30 cursive">Resume</h1>
             </section>
 
-            <div className="p-1-0-2-0 fl-c fl-d"><a className="btn" href="https://drive.google.com/drive/folders/12K9-_P0MnyXLXbE0tbFFme0vdQIS4NIC?usp=sharing" target="_blank" rel="noopener noreferrer">PDF</a></div>
+            <div className="p-1-0-2-0 fl-c fl-d"><a className="btn" href="https://drive.google.com/file/d/1SLYPurTDccShrs43lrU8GDeelNG1OEEx/view?usp=sharing" target="_blank" rel="noopener noreferrer">PDF</a></div>
 
             <div className="resume">
                 <div className="resume-dec"></div>

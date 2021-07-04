@@ -602,12 +602,11 @@ h1, h2, h3 {
 }
 
 .desc h3 {
-  font-family: 'Marck Script', cursive;
   font-size: 24px;
   padding: 4px 16px;
   color: rgba(132, 0, 240, 0.85);
   border: 1px solid rgba(132, 0, 240, 0.35);
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 @media (max-width: 768px) {
@@ -837,7 +836,7 @@ h1, h2, h3 {
 }
 
 .resume-contacts p {
-  margin-bottom: 0.1rem;
+  margin: 0.25rem 0;
 }
 
 .resume-item {

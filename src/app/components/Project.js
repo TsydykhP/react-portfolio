@@ -7,16 +7,16 @@ const Project = () => {
     const [projectData, setProjectData] = useState(null);
 
     useEffect(() => {
-        sanityClient.fetch('*[_type == "project" ] {title, link, type, level, techStack, adaptive, optimize, image{asset->{_id, url}, alt}}')
+        sanityClient.fetch('*[_type == "project" ] {id, title, link, type, level, techStack, adaptive, optimize, image{asset->{_id, url}, alt}}')
         .then((data) => setProjectData(data))
         .catch(console.error);
     }, []);
 
     return (
-        <motion.section className="grid fl-d" layout whileHover={{ opacity: 1}}>
-            {projectData && projectData.map((project, index) => (
+        <motion.section className="grid" layout whileHover={{ opacity: 1}}>
+            {projectData && projectData.map((project) => (
 
-            <article className="project-wrap" key={index}>
+            <article className="project-wrap" key={project.id} layout>
                 <a className="project" href={project.link} target="_blank" rel="noopener noreferrer">
 
                     <motion.img

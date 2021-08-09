@@ -41,6 +41,7 @@ main {
 }
 
 .grid {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -51,6 +52,12 @@ header {
   font-family: 'Comfortaa', cursive;
   font-weight: 300;
   font-size: 0.925rem;
+}
+
+@media (min-width: 1600px) {
+  header {
+    font-size: 1rem;
+  }
 }
 
 main {
@@ -365,7 +372,7 @@ h1, h2, h3 {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 .social-links li:nth-child(1) a:hover {
@@ -373,7 +380,7 @@ h1, h2, h3 {
 }
 
 .social-links li:nth-child(2) a:hover {
-  background-color: #e4405f;
+  background-color: #434343;
 }
 
 .social-links li:nth-child(3) a:hover {
@@ -381,8 +388,8 @@ h1, h2, h3 {
 }
 
 .social-links .fa {
-  font-size: 16px;
-  padding: 0.5rem;
+  font-size: 18px;
+  padding: 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #000;
@@ -400,9 +407,17 @@ h1, h2, h3 {
 }
 
 .social-links a {
-  display: block;
-  width: 32px;
-  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #fff;
   text-align: center;
@@ -410,6 +425,7 @@ h1, h2, h3 {
   transition: 0.4s;
   -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
 .social-links a:hover {
@@ -673,7 +689,7 @@ h1, h2, h3 {
   cursor: pointer;
   border: none;
   background: transparent;
-  width: 600px;
+  width: 100%;
   height: 400px;
   color: #000;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.22);

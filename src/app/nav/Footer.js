@@ -9,7 +9,7 @@ function Footer() {
             <div className="wrap-nav">
                 <NavLink className="link" to="/" exact><img src={logo} alt="logo" width="64" height="64" /></NavLink>
                 <NavLink className="link name" to="/" exact>© Tsydykh Pokhodiev, 2021</NavLink>
-                <a href="https://bit.ly/3Cl3QeE" className="link contact-link">Resume</a>
+                <a href="https://bit.ly/3Cl3QeE" target="_blank" rel="noopener noreferrer" className="link contact-link">Resume</a>
             </div>
         </footer>
     )

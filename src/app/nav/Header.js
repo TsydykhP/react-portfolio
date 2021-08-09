@@ -19,9 +19,9 @@ function Header() {
                                 <li><NavLink to="/resume">Resume</NavLink></li>
                                 <div className="social-links">
                                     <ul>
-                                        <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/"><i className="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA"><i className="fa fa-youtube"></i></a></li>
-                                        <li><a href="https://www.instagram.com/tsydykh_pokhodiev/"><i className="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></li>
+                                        <li><a href="https://www.instagram.com/tsydykh_pokhodiev/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </ul>
@@ -40,9 +40,9 @@ function Header() {
                 </motion.div>
                 <motion.div className="social-links" initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ delay: 1 }}>
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/"><i className="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA"><i className="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.instagram.com/tsydykh_pokhodiev/"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/tsydykh-pokhodiev" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></li>
                     </ul>
                 </motion.div>
             </motion.nav>

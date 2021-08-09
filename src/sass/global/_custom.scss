@@ -9,6 +9,10 @@ header {
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
     font-size: 0.925rem;
+
+    @media (min-width: 1600px) {
+        font-size: 1rem;
+    }
 }
 main {
     font-family: 'Quicksand', sans-serif;

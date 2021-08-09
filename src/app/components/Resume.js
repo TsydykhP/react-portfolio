@@ -107,25 +107,25 @@ function Resume() {
                             <hr />
                             <div className="courses">
                                 <div className="course">
-                                    <h3>Google Project Management</h3>
+                                    <h3>Project Management</h3>
                                     <p className="course-sub">Google Career Certificates</p>
                                     <p className="course-desc">"I took this course to develop my soft skills: communication, planning, empathy, teamwork, and problem solving."</p>
                                     <a className="course-link" href="https://coursera.org/share/e2fb266bc6c9deb721588e091d0fd366" target="_blank" rel="noopener noreferrer">Look</a>
                                 </div>
                                 <div className="course">
-                                    <h3>Google Agile Project Management</h3>
+                                    <h3>Agile Project Management</h3>
                                     <p className="course-sub">Google Career Certificates</p>
                                     <p className="course-desc">"Learned more about Agile methodology"</p>
                                     <a className="course-link" href="https://coursera.org/share/b429f17604a8cdb439c3658f410e9504" target="_blank" rel="noopener noreferrer">Look</a>
                                 </div>
                                 <div className="course">
-                                    <h3>Google Foundations of UX Design</h3>
+                                    <h3>Foundations of UX Design</h3>
                                     <p className="course-sub">Google Career certificates</p>
                                     <p className="course-desc">"This is useful for my future work with designers."</p>
                                     <a className="course-link" href="https://coursera.org/share/5bfe1f26996aeb2bf08f96409e70c0cc" target="_blank" rel="noopener noreferrer">Look</a>
                                 </div>
                             </div>
-                            <a className="fl-c" href="https://drive.google.com/drive/folders/1cZudXNOpPq4Hw88uvlWVBp-IxTEi7zsH?usp=sharing" target="_blank" rel="noopener noreferrer">Look all my certificates</a>
+                            <a className="fl-c" href="https://drive.google.com/drive/folders/1cZudXNOpPq4Hw88uvlWVBp-IxTEi7zsH?usp=sharing" target="_blank" rel="noopener noreferrer">Look all certificates</a>
                         </div>
                     </section>
                 </div>

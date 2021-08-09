@@ -20,8 +20,8 @@ function Header() {
                                 <div className="social-links">
                                     <ul>
                                         <li><a href="https://www.linkedin.com/in/tsydykh-pokhodiev/" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/tsydykh-pokhodiev" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"></i></a></li>
                                         <li><a href="https://www.youtube.com/channel/UCqwE-YdX12zQHoWGKZE--AA" target="_blank" rel="noopener noreferrer"><i className="fa fa-youtube"></i></a></li>
-                                        <li><a href="https://www.instagram.com/tsydykh_pokhodiev/" target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </ul>

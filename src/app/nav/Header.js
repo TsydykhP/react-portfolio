@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 
 function Header() {
     return (
@@ -33,7 +33,7 @@ function Header() {
 
             <motion.nav className="wrap-nav nav" whileHover={{ opacity: 1}} >
                 <motion.div className="nav-links" initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ delay: 0.65 }}>
-                    <NavLink to="/" exact><img src={logo} alt="logo" /></NavLink>
+                    <NavLink to="/" exact><img src={logo} alt="logo" width="64" height="64" /></NavLink>
                     <NavLink className="link" activeClassName="active-link" to="/" exact>About Me</NavLink>
                     <NavLink className="link" activeClassName="active-link" to="/portfolio">Portfolio</NavLink>
                     <NavLink className="link" activeClassName="active-link" to="/resume">Resume</NavLink>

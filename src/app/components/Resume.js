@@ -42,13 +42,13 @@ function Resume() {
                                 <div className="skill-bg">
                                     <div className="skill-active sa-4"></div>
                                 </div>
-                                <h3>Express.js</h3>
+                                <h3>Next.js</h3>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-bg">
                                     <div className="skill-active sa-5"></div>
                                 </div>
-                                <h3>React Native</h3>
+                                <h3>Express.js</h3>
                             </div>
                             <div className="skill-item">
                                 <div className="skill-bg">
@@ -77,7 +77,7 @@ function Resume() {
                         </div>
                         <div className="resume-section"><h2>Contacts</h2><hr /></div>
                         <div className="resume-contacts">
-                            <p>Web: tsydykh-pokhodiev.com</p>
+                            <p>Web: tsydykh-pokhodiev.web.app</p>
                             <p>Email: tsydykhp@gmail.com</p>
                             <p>https://www.linkedin.com/in/tsydykh-pokhodiev/</p>
                         </div>
